@@ -35,10 +35,6 @@ if(NOT TARGET ${PROJECT_NAME})
 
     target_link_libraries(${PROJECT_NAME} INTERFACE Poll)
 
-    if(WIN32)
-        target_link_libraries(PUBLIC ws2_32)
-    endif()
-
     add_executable(ae2f_InetWinIOCP test/clone.cpp)
     add_executable(ae2f_InetLinuxEPoll test/hallo.cpp)
 endif()
