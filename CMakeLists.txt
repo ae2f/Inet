@@ -29,9 +29,6 @@ if(NOT TARGET ${PROJECT_NAME})
     )
 
     target_link_libraries(${PROJECT_NAME} INTERFACE Poll)
-
-    add_executable(ae2f_InetWinIOCP test/clone.cpp)
-    add_executable(ae2f_InetLinuxEPoll test/hallo.cpp)
     target_link_libraries(ae2f_InetWinIOCP ${PROJECT_NAME})
     target_link_libraries(ae2f_InetLinuxEPoll ${PROJECT_NAME})
 endif()
