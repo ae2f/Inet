@@ -29,6 +29,4 @@ if(NOT TARGET ${PROJECT_NAME})
     )
 
     target_link_libraries(${PROJECT_NAME} INTERFACE Poll)
-    target_link_libraries(ae2f_InetWinIOCP ${PROJECT_NAME})
-    target_link_libraries(ae2f_InetLinuxEPoll ${PROJECT_NAME})
 endif()
