@@ -23,7 +23,7 @@
 
 #pragma region Library Import
 #if ae2f_IS_WIN
-#include <WinSock2.h>
+#include <winsock2.h>
 
 /// @brief
 /// Inetet API Data
