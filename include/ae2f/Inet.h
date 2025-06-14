@@ -14,12 +14,8 @@
 
 #include <ae2f/Call.h>
 #include <ae2f/Cast.h>
-
 #include "Inet/Sock.h"
-
-#if ae2f_IS_WIN == ae2f_IS_LINUX
-#error This library will not work gracefully under this OS, which means it has no clue for this lib.
-#endif
+#include <ae2f/Platform.h>
 
 #pragma region Library Import
 #if ae2f_IS_WIN

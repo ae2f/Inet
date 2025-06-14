@@ -4,7 +4,7 @@ include(cmake/Core.cmake)
 
 project(Poll VERSION 0.0.0 LANGUAGES C CXX)
 if(NOT TARGET ${PROJECT_NAME})
-    ae2f_CoreLibFetch(ae2f Core Rel-v6.18.11)
+    ae2f_CoreLibFetch(ae2f Core Rel-v6.24.19)
 
     ae2f_CoreLibTent(
         ${PROJECT_NAME}
@@ -13,7 +13,7 @@ if(NOT TARGET ${PROJECT_NAME})
         "include/ae2f/Poll.h"
     )
 
-    target_link_libraries(${PROJECT_NAME} INTERFACE Core)
+    target_link_libraries(ae2f-${PROJECT_NAME} INTERFACE ae2f::Core)
 endif()
 
 project(Inet VERSION 0.0.0 LANGUAGES C CXX)
@@ -29,5 +29,5 @@ if(NOT TARGET ${PROJECT_NAME})
         "include/ae2f/Inet/Wsa.h"
     )
 
-    target_link_libraries(${PROJECT_NAME} INTERFACE Poll)
+    target_link_libraries(ae2f-${PROJECT_NAME} INTERFACE ae2f::Poll)
 endif()
