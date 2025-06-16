@@ -1,4 +1,4 @@
-#include "./Inet.h"
+#include "../Inet.h"
 
 #ifdef _WIN32
 
