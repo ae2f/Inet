@@ -24,7 +24,7 @@ if(NOT TARGET ${PROJECT_NAME})
         INTERFACE 
         include ae2f
         "include/ae2f/Inet.h"
-        "include/ae2f/Block.h"
+        "include/ae2f/Inet/Block.h"
         "include/ae2f/Inet/Sock.h"
         "include/ae2f/Inet/Wsa.h"
     )
